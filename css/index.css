@@ -107,3 +107,51 @@ body {
     }
 }
 
+/* --- Portada --- */
+.seccion-portada {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fondo-portada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f0c29, #000000, #181831);
+    z-index: 1;
+}
+
+.contenido-portada {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.titulo-portada {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 8vw;
+    font-weight: 900;
+    letter-spacing: 10px;
+    background: linear-gradient(90deg, #00ffff, #ff00de, #00ffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: animacion-gradiente 3s linear infinite;
+    text-shadow: 0 0 80px rgba(0, 255, 255, 0.5);
+}
+
+.subtitulo-portada {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #00ffff;
+    letter-spacing: 5px;
+    opacity: 0;
+    animation: entradaArriba 1s ease-out 0.5s forwards;
+}

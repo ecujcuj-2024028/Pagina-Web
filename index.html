@@ -31,7 +31,18 @@
         </div>
     </nav>
 
-    
+    <section class="seccion-portada">
+        <div class="fondo-portada"></div>
+        <div class="contenido-portada" id="heroContent">
+            <h1 class="titulo-portada">Mis Gustos</h1>
+            <p class="subtitulo-portada">Los VideoJuegos</p>
+        </div>
+        <div class="indicador-desplazamiento" onclick="document.querySelector('.seccion-horizontal').scrollIntoView({behavior: 'smooth'})">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

@@ -229,3 +229,86 @@ body {
     line-height: 1.9;
     color: rgba(255, 255, 255, 0.85);
 }
+
+/* Cuadrícula de Tarjetas */
+.cuadricula-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tarjeta-informativa {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px solid rgba(255, 0, 222, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-informativa:hover {
+    transform: translateY(-10px);
+    border-color: #ff00de;
+    box-shadow: 0 20px 60px rgba(255, 0, 222, 0.3);
+}
+
+.titulo-tarjeta {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #ff00de;
+    margin-bottom: 15px;
+}
+
+.texto-tarjeta {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Lista de Habilidades */
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.item-habilidad {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-left: 4px solid #00ffff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.item-habilidad:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.item-habilidad::before {
+    content: '▹';
+    color: #00ffff;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .seccion-perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nombre-perfil {
+        font-size: 2.5rem;
+    }
+
+    .seccion-contenido {
+        padding: 30px;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+    }
+}

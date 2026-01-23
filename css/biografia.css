@@ -1,0 +1,314 @@
+/* --- Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* --- Barra de Navegación --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 50px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 15px 50px;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00ffff, #ff00de);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    gap: 30px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 0 !important;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00ffff, #ff00de);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00ffff !important;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 2px solid #00ffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300ffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .navbar-collapse {
+        background: rgba(10, 10, 10, 0.98);
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 255, 255, 0.2);
+    }
+
+    .nav-link {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* --- Hero de Biografía --- */
+.hero-biografia {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f0c29, #000000, #181831);
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.hero-biografia::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.05"/></pattern></defs><rect width="1200" height="800" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.contenedor-biografia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.seccion-perfil {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.info-perfil {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nombre-perfil {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    background: linear-gradient(90deg, #00ffff, #ff00de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+.titulo-perfil {
+    font-size: 1.8rem;
+    color: #00ffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.texto-biografico {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Secciones de Contenido */
+.seccion-contenido {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 30px;
+    padding: 60px;
+    margin-bottom: 50px;
+    border: 2px solid rgba(0, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.seccion-contenido::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.05), transparent);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.seccion-contenido:hover::before {
+    left: 100%;
+}
+
+.seccion-contenido:hover {
+    border-color: rgba(0, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.titulo-seccion {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00ffff;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00ffff, #ff00de);
+}
+
+.contenido-texto {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Cuadrícula de Tarjetas */
+.cuadricula-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tarjeta-informativa {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px solid rgba(255, 0, 222, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-informativa:hover {
+    transform: translateY(-10px);
+    border-color: #ff00de;
+    box-shadow: 0 20px 60px rgba(255, 0, 222, 0.3);
+}
+
+.titulo-tarjeta {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #ff00de;
+    margin-bottom: 15px;
+}
+
+.texto-tarjeta {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Lista de Habilidades */
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.item-habilidad {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 20px 30px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-left: 4px solid #00ffff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.item-habilidad:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.item-habilidad::before {
+    content: '▹';
+    color: #00ffff;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .seccion-perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nombre-perfil {
+        font-size: 2.5rem;
+    }
+
+    .seccion-contenido {
+        padding: 30px;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+    }
+}

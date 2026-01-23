@@ -1,0 +1,64 @@
+/* Paleta de Colores Kinal:
+   Azul: #004b93
+   Naranja: #f37021
+   Blanco: #ffffff
+*/
+
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 4px solid #003465a8;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-logo .nav-logo {
+    height: 70px;
+    width: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.navbar-nav {
+    gap: 5px;
+}
+
+/* Enlaces del Menú */
+.nav-link {
+    color: #004b93 !important;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f37021 !important;
+}
+
+.dropdown-menu {
+    border: none;
+    border-top: 3px solid #f37021;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #ffffff;
+}
+
+.dropdown-item {
+    color: #004b93 !important;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #f37021 !important;
+}
+
+.navbar-toggler {
+    border-color: #004b93;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23004b93' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

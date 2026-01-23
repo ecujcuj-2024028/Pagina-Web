@@ -106,3 +106,68 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
+
+/* --- Hero de Biografía --- */
+.hero-biografia {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f0c29, #000000, #181831);
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.hero-biografia::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.05"/></pattern></defs><rect width="1200" height="800" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.contenedor-biografia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.seccion-perfil {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.info-perfil {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nombre-perfil {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    background: linear-gradient(90deg, #00ffff, #ff00de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+.titulo-perfil {
+    font-size: 1.8rem;
+    color: #00ffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.texto-biografico {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.85);
+}

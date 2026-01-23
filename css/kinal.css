@@ -1,6 +1,6 @@
 /* Paleta de Colores Kinal:
-   Azul: #004b93
-   Naranja: #f37021
+   Azul: #1C3369
+   Naranja: #FF9230
    Blanco: #ffffff
 */
 
@@ -12,7 +12,7 @@
 }
 
 .navbar-brand-logo .nav-logo {
-    height: 70px;
+    height: 60px;
     width: auto;
     display: block;
     transition: transform 0.2s ease;
@@ -24,7 +24,7 @@
 
 /* Enlaces del Menú */
 .nav-link {
-    color: #004b93 !important;
+    color: #1C3369 !important;
     font-size: 0.95rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -33,30 +33,30 @@
 }
 
 .nav-link:hover {
-    color: #f37021 !important;
+    color: #FF9230 !important;
 }
 
 .dropdown-menu {
     border: none;
-    border-top: 3px solid #f37021;
+    border-top: 3px solid #FF9230;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     background-color: #ffffff;
 }
 
 .dropdown-item {
-    color: #004b93 !important;
+    color: #1C3369 !important;
     font-weight: 500;
     padding: 10px 20px;
 }
 
 .dropdown-item:hover {
     background-color: #f8f9fa;
-    color: #f37021 !important;
+    color: #FF9230 !important;
 }
 
 .navbar-toggler {
-    border-color: #004b93;
+    border-color: #1C3369;
 }
 
 .navbar-toggler-icon {

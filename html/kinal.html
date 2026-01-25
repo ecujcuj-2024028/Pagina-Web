@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="../css/kinal.css">
     <title>Kinal</title>
 </head>
 <body>
+    <!-- Video de fondo -->
+    <header class="hero">
+        <video autoplay muted loop id="video-fondo">
+            <source src="../video/kinal.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay"></div>
+    </header>
+
     <!-- Navbar con todos dropdowns -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top " data-aos="fade-down">
         <div class="container-fluid px-4">
             <a class="navbar-brand-logo" href="#">
             <img src="https://static.wixstatic.com/media/128120_cfcd43999075474d8400eb39987892ca~mv2.png/v1/fill/w_342,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FUNDACIÃ“N_KINAL_VECTOR--0101.png" 
@@ -78,12 +92,32 @@
                                 alt="Banco-bi" class="nav-logo">
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Regresar</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Contenido de la página -->
+    <div class="container mt-4 text-center">
+        <img src="../img/lema.avif" alt="Lema-kinal" class="img-fluid mb-4" style="max-width: 200px;" data-aos="fade-up">
+        <h1 data-aos="fade-up"><b>EMPIEZA TU CAMINO AL EXITO EN KINAL</b></h1>
+        <p data-aos="fade-up" data-aos-delay="100">Kinal es una fundación dedicada a la educación técnica en Guatemala. Ofrecemos programas de formación en diversas áreas tecnológicas para preparar a los estudiantes para el mercado laboral.</p>
+        <p data-aos="fade-up" data-aos-delay="200">Nuestra misión es brindar oportunidades educativas de calidad a jóvenes talentosos, fomentando el desarrollo personal y profesional.</p>
+        <p data-aos="fade-up" data-aos-delay="300">Únete a nosotros y sé parte de una comunidad comprometida con el crecimiento y la innovación.</p>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+    AOS.init({
+        once: true,
+        mirror: false
+    });
+</script>
 </body>
 </html>

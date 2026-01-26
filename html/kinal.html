@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="../css/kinal.css">
     <title>Kinal</title>
 </head>
+
 <body>
+    <!-- Video de fondo -->
+    <header class="hero">
+        <video autoplay muted loop id="video-fondo">
+            <source src="../video/kinal.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay"></div>
+    </header>
+
     <!-- Navbar con todos dropdowns -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top " data-aos="fade-down">
         <div class="container-fluid px-4">
             <a class="navbar-brand-logo" href="#">
-            <img src="https://static.wixstatic.com/media/128120_cfcd43999075474d8400eb39987892ca~mv2.png/v1/fill/w_342,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FUNDACIÃ“N_KINAL_VECTOR--0101.png" 
-                alt="Logo Kinal" class="nav-logo">
+                <img src="https://static.wixstatic.com/media/128120_cfcd43999075474d8400eb39987892ca~mv2.png/v1/fill/w_342,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FUNDACIÃ“N_KINAL_VECTOR--0101.png"
+                    alt="Logo Kinal" class="nav-logo">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
@@ -27,7 +46,8 @@
                     </li>
                     <!-- Dropdown 1 -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             QUIÉNES SOMOS
                         </a>
                         <ul class="dropdown-menu">
@@ -42,7 +62,8 @@
 
                     <!-- Dropdown 2 -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             EDUCACIÓN
                         </a>
                         <ul class="dropdown-menu">
@@ -55,7 +76,8 @@
 
                     <!-- Dropdown 3 -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             ANTIGUOS ALUMNOS
                         </a>
                         <ul class="dropdown-menu">
@@ -71,16 +93,474 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">BLOG</a>
                     </li>
-                    
+
                     <li class="nav-item">
-                        <a class="nav-link" href="https://link.ebi.com.gt/EBL107353eo4368asf2g/1621282737059942b/1634135282dc79e2f">DONACIÓN</a>
+                        <a class="navbar-brand-logo"
+                            href="https://link.ebi.com.gt/EBL107353eo4368asf2g/1621282737059942b/1634135282dc79e2f">
+                            <img src="https://static.wixstatic.com/media/128120_222c6afe0771472e85c1ad44674c3a70~mv2.png/v1/fill/w_246,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Recurso%203-8.png"
+                                alt="Banco-bi" class="nav-logo">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Regresar</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Contenido de la página -->
+    <div class="container mt-4 text-center">
+        <img src="../img/lema.avif" alt="Lema-kinal" class="img-fluid mb-4" style="max-width: 200px;"
+            data-aos="fade-up">
+        <h1 data-aos="fade-up"><b>EMPIEZA TU CAMINO AL EXITO EN KINAL</b></h1>
+        <p data-aos="fade-up" data-aos-delay="100">Kinal es una fundación dedicada a la educación técnica en Guatemala.
+            Ofrecemos programas de formación en diversas áreas tecnológicas para preparar a los estudiantes para el
+            mercado laboral.</p>
+        <p data-aos="fade-up" data-aos-delay="200">Nuestra misión es brindar oportunidades educativas de calidad a
+            jóvenes talentosos, fomentando el desarrollo personal y profesional.</p>
+        <p data-aos="fade-up" data-aos-delay="300">Únete a nosotros y sé parte de una comunidad comprometida con el
+            crecimiento y la innovación.</p>
+    </div>
+
+    <section class="seccion-horizontal" id="programas">
+        <div class="contenedor-fijo">
+            <div class="scroll-horizontal" id="horizontalScroll">
+
+                <div class="panel-juego">
+                    <div class="contenido-panel" data-aos="fade-right">
+                        <img src="../img/foto-basico.svg" alt="Ciclo Básico">
+                        <p class="descripcion-panel">Kinal ofrece su programa de Educación General Básica para todos
+                            aquellos jóvenes que buscan una orientación técnica y excelencia académica.</p>
+                        <a href="https://www.kinal.org.gt/ciclobasico" class="btn btn-sm mt-3">Conoce más</a>
+                    </div>
+                </div>
+
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="../img/foto-diver.svg" alt="Diversificado">
+                        <p class="descripcion-panel">Durante 3 años se prepara al joven de forma técnica y académica, el
+                            egresado estará listo para trabajar en el ramo técnico de la especialidad que eligió
+                            estudiar; el título obtenido le permitirá ingresar a la universidad.</p>
+                        <a href="https://www.kinal.org.gt/peritostecnicos" class="btn btn-sm mt-3">Conoce más</a>
+                    </div>
+                </div>
+
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="../img/foto-tecnica.avif" alt="Escuela Técnica">
+                        <p class="descripcion-panel">Contamos con más de 30 especialidades técnicas y tecnológicas que
+                            pueden favorecer tu crecimiento y/o tu inserción laboral.</p>
+                        <a href="https://www.kinal.org.gt/escuelatecnicasuperior" class="btn btn-sm mt-3">Conoce más</a>
+                    </div>
+                </div>
+
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="../img/foto-negocio.svg" alt="Empresas">
+                        <p class="descripcion-panel">Podemos diseñar conjuntamente el programa de formación profesional
+                            que mejor se adapte a tus necesidades de capacitación.</p>
+                    </div>
+                </div>
+
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="../img/foto-tecnico-universitario.avif" alt="UNIS">
+                        <p class="descripcion-panel">Dirigido al fortalecimiento de mandos medios y especialmente
+                            aquellos que han cursado una carrera técnica y desean continuar con estudios a nivel
+                            universitario. Estos estudios son avalados por la Universidad del Istmo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de carrusel de imágenes -->
+    <section class="seccion-swiper">
+        <div class="swiper imagenesSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="../img/foto1-carrusel.avif" alt="Fondo" class="img-main">
+                    <img src="../img/foto1.5-carrusel.avif" alt="Frente" class="img-overlay">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../img/foto2-carrusel.avif" alt="Fondo" class="img-main">
+                    <img src="../img/foto2.5-carrusel.avif" alt="Frente" class="img-overlay">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../img/foto3-carrusel.avif" alt="Fondo" class="img-main">
+                    <img src="../img/foto3.5-carrusel.avif" alt="Frente" class="img-overlay">
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="seccion-partners py-5 bg-white">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="titulo-seccion" data-aos="fade-up"><b>NUESTROS PARTNERS</b></h2>
+                    <hr class="mx-auto" style="width: 50px; border: 2px solid #FF9230; opacity: 1;">
+                </div>
+            </div>
+
+            <div class="swiper partnersSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner1.png" class="img-partner" alt="Partner 1">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner2.png" class="img-partner" alt="Partner 2">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner3.png" class="img-partner" alt="Partner 3">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner4.png" class="img-partner" alt="Partner 4">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner5.png" class="img-partner" alt="Partner 5">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner6.png" class="img-partner" alt="Partner 6">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner7.png" class="img-partner" alt="Partner 7">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner8.png" class="img-partner" alt="Partner 8">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="../img/partner9.png" class="img-partner" alt="Partner 9">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-galeria-full">
+        <img src="../img/galeria-fotos.avif" alt="Galería de Fotos" class="img-galeria-fondo">
+
+        <div class="galeria-capa">
+            <a href="https://www.kinal.org.gt/galeria" class="galeria-boton-link" data-aos="zoom-in">
+                GALERÍA DE FOTOS
+            </a>
+        </div>
+    </section>
+
+    <section class="seccion-alumnos py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="img-container-alumno">
+                        <img src="../img/alumno.avif" alt="Antiguo Alumno Kinal" class="img-fluid student-img">
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="info-box-white p-5 text-center text-lg-start">
+                        <h2 class="titulo-alumnos">
+                            ¿ERES ANTIGUO ALUMNO?<br>
+                            <span class="text-azul-kinal">¡LAS EMPRESAS TE ESTÁN BUSCANDO!</span>
+                        </h2>
+                        <p class="texto-alumnos my-4">
+                            Durante 2023 recibimos más de 600 solicitudes de trabajo para nuestros antiguos alumnos.
+                        </p>
+
+                        <a href="https://www.kinal.org.gt/trabajo"
+                            class="link-trabajos d-inline-flex align-items-center justify-content-center">
+                            TRABAJOS
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="info-box-white p-5 text-center text-lg-start">
+                        <h2 class="titulo-alumnos">
+                            ¡NECESITAMOS MÁS
+                            JÓVENES DE ESTE LADO!<br>
+                        </h2>
+                        <p class="texto-alumnos my-4">
+                            Cada donación que haces ayuda a la educación de un joven guatemalteco de escasos recursos a
+                            tener una educación de calidad.
+                        </p>
+
+                        <a href="https://www.kinal.org.gt/apoyanos"
+                            class="link-trabajos d-inline-flex align-items-center justify-content-center">
+                            APOYANOS
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="img-container-alumno">
+                        <img src="../img/colegio-enfrente.avif" alt="APOYANOS" class="img-fluid student-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Beneficiados-->
+    <section class="seccion-beneficiados py-5">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="titulo-impacto">JÓVENES BENEFICIADOS <span class="fw-light">(A 2024)</span></h2>
+                    <div class="separador-naranja mx-auto"></div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card-stats h-100">
+                        <div class="card-stats-body">
+                            <h3 class="stat-number text-naranja">
+                                <span class="counter" data-target="25">0</span>k
+                            </h3>
+                            <p class="stat-label">Escuela Técnica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-stats h-100">
+                        <div class="card-stats-body">
+                            <h3 class="stat-number text-guinda">
+                                <span class="counter" data-target="1500">0</span>
+                            </h3>
+                            <p class="stat-label">Ciclo Básico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-stats h-100">
+                        <div class="card-stats-body">
+                            <h3 class="stat-number text-azul-claro">
+                                <span class="counter" data-target="6">0</span>k
+                            </h3>
+                            <p class="stat-label">Diversificado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-stats h-100 card-total">
+                        <div class="card-stats-body">
+                            <h3 class="stat-number text-azul-oscuro">
+                                +<span class="counter" data-target="32">0</span>k
+                            </h3>
+                            <p class="stat-label">TOTAL BENEFICIADOS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-blog py-5 bg-white">
+        <div class="container py-4">
+
+            <div class="row mb-5">
+                <div class="col-12 text text-lg-start" data-aos="fade-up">
+                    <h2 class="titulo-blog">NUESTRO <b>BLOG</b></h2>
+                    <div class="separador-naranja"></div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+                <div class="col" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card card-blog h-100">
+                        <div class="img-blog-container">
+                            <img src="../img/blog1.avif" class="card-img-top" alt="Blog 49">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title-blog">Patronato KINAL Mensaje semanal 49 2025</h5>
+                            <p class="card-text-blog">Descubre las últimas actualizaciones y mensajes de nuestro
+                                patronato para esta semana...</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4">
+                            <a href="https://www.kinal.org.gt/post/patronato-kinal-mensaje-semanal-49-2025"
+                                class="link-leer">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-blog h-100">
+                        <div class="img-blog-container">
+                            <img src="../img/blog2.avif" class="card-img-top" alt="Blog 48">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title-blog">Patronato KINAL | Mensaje semanal | 48 2025</h5>
+                            <p class="card-text-blog">Reflexiones y avances institucionales compartidos en nuestro
+                                mensaje semanal número 48...</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4">
+                            <a href="https://www.kinal.org.gt/post/patronato-kinal-mensaje-semanal-48-2025"
+                                class="link-leer">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-blog h-100">
+                        <div class="img-blog-container">
+                            <img src="../img/blog3.png" class="card-img-top" alt="Blog 45">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title-blog">Patronato KINAL | Mensaje semanal 45 | 2025</h5>
+                            <p class="card-text-blog">Un repaso por las actividades y metas alcanzadas durante la semana
+                                45 de este año...</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4">
+                            <a href="https://www.kinal.org.gt/post/patronato-kinal-mensaje-semanal-45-2025"
+                                class="link-leer">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card card-blog h-100">
+                        <div class="img-blog-container">
+                            <img src="../img/blog4.jpg" class="card-img-top" alt="Blog 44">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title-blog">Patronato Kinal | Mensaje semanal #44 | 2025</h5>
+                            <p class="card-text-blog">Compromiso y valores: lo más relevante de nuestro mensaje semanal
+                                para la comunidad Kinal...</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-4">
+                            <a href="https://www.kinal.org.gt/post/patronato-kinal-mensaje-semanal-44-2025"
+                                class="link-leer">Leer más →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-kinal pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4" data-aos="fade-up">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="titulo-footer mb-4">CONTÁCTANOS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="mailto:infocet@kinal.org.gt"
+                                class="link-footer">infocet@kinal.org.gt</a></li>
+                        <li class="mb-2"><a href="mailto:infobas@kinal.org.gt"
+                                class="link-footer">infobas@kinal.org.gt</a></li>
+                        <li class="mb-2"><a href="mailto:infoets@kinal.org.gt"
+                                class="link-footer">infoets@kinal.org.gt</a></li>
+                        <li class="mb-2"><a href="mailto:infotic@kinal.org.gt"
+                                class="link-footer">infotic@kinal.org.gt</a></li>
+                    </ul>
+                    <div class="ws-box p-3 rounded-4 d-inline-flex align-items-center mt-3">
+                        <div>
+                            <small class="d-block text-white-50">WhatsApp</small>
+                            <a href="https://api.whatsapp.com/send/?phone=50250531936"
+                                class="fw-bold text-white text-decoration-none">Escuela Técnica Superior Kinal</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+                    <h5 class="titulo-footer mb-4">UBICACIÓN</h5>
+                    <p class="text-white opacity-75">
+                        6 avenida 13-54 zona 7,<br>
+                        Colonia Landívar, 01007<br>
+                        Ciudad de Guatemala, Guatemala, C.A.
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://maps.app.goo.gl/1quWomBUVV2Chviu6" target="_blank"
+                            class="btn btn-outline-light btn-sm rounded-pill px-3">Ver Mapa</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="titulo-footer mb-4">BOLSA DE EMPLEOS</h5>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><a href="mailto:empleos@kinal.edu.gt"
+                                class="link-footer">empleos@kinal.edu.gt</a></li>
+                        <li class="mb-2"><a href="mailto:lesterguerra@kinal.org.gt"
+                                class="link-footer">lesterguerra@kinal.org.gt</a></li>
+                    </ul>
+                    <div class="ws-box p-3 rounded-4 d-inline-flex align-items-center">
+                        <div>
+                            <small class="d-block text-white-50">WhatsApp</small>
+                            <a href="https://wa.me/50222160090"
+                                class="fw-bold text-white text-decoration-none">2216-0090</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-5 mb-4 border-light opacity-25">
+
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="titulo-footer mb-3" style="font-size: 1rem;">SÍGUENOS</h5>
+                    <div class="social-links d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="https://www.facebook.com/fundacionkinal" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fundacionkinal" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@FundaciónKinal-i7m" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://api.whatsapp.com/send/?phone=50230797820&text&type=phone_number&app_absent=0"
+                        class="btn btn-warning btn-lg rounded-pill px-5 fw-bold shadow-sm">
+                        ADMISIONES 2026
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-4 border-top border-light border-opacity-10 pt-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">© 2026 Fundación Kinal. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <img src="../img/logo.avif" alt="Logo Kinal" style="height: 40px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/kinal.js"></script>
 </body>
+
 </html>

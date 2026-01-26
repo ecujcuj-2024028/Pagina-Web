@@ -304,3 +304,84 @@ p {
         max-width: 90%;
     }
 }
+
+/* Partners */
+.seccion-partners {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.titulo-seccion {
+    color: #1C3369;
+    letter-spacing: 1px;
+}
+
+.img-partner {
+    max-width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.4s ease;
+    padding: 20px;
+}
+
+.img-partner:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Ajuste para que Swiper centre verticalmente los logos de diferentes tamaños */
+.partnersSwiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Configuración de la Galería Full Screen */
+.seccion-galeria-full {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-galeria-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Capa oscura para que el texto resalte */
+.galeria-capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Estilo del Link / Botón */
+.galeria-boton-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: #ffffff;
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    padding: 20px 50px;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}

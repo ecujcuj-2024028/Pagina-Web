@@ -3,6 +3,14 @@
    Naranja: #FF9230
    Blanco: #ffffff
 */
+
+:root {
+    --kinal-guinda: #852b54;
+    --kinal-azul: #1C3369;
+    --kinal-azul-claro: #004e92;
+    --kinal-naranja: #FF9230;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -459,4 +467,75 @@ p {
 .link-trabajos:hover {
     color: #FF9230;
     transform: translateX(5px);
+}
+
+.seccion-beneficiados {
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Estilo del Título */
+.titulo-impacto {
+    color: var(--kinal-azul);
+    font-weight: 900;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 15px;
+}
+
+.separador-naranja {
+    height: 4px;
+    width: 60px;
+    background-color: var(--kinal-naranja);
+    border-radius: 2px;
+}
+
+/* Estilo de las Tarjetas de Estadística */
+.card-stats {
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+}
+
+.card-stats:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.card-stats-body {
+    padding: 40px 25px;
+    text-align: center;
+}
+
+/* Estilo de los Números */
+.stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+/* Estilo de las Etiquetas */
+.stat-label {
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Colores específicos para los números */
+.text-naranja { color: var(--kinal-naranja); }
+.text-guinda { color: var(--kinal-guinda); }
+.text-azul-claro { color: var(--kinal-azul-claro); }
+.text-azul-oscuro { color: var(--kinal-azul); }
+
+/* Destacar la tarjeta de TOTAL */
+.card-total .stat-label {
+    color: var(--kinal-azul);
+    font-weight: 900;
 }

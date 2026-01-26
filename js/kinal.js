@@ -20,7 +20,7 @@ if (horizontalSection && horizontalScroll) {
             scrub: 1,
             snap: 1 / (panels.length - 1),
             start: "top top",
-            end: () => "+=" + horizontalScroll.offsetWidth 
+            end: () => "+=" + horizontalScroll.offsetWidth
         }
     });
 }
@@ -78,4 +78,27 @@ var partnersSwiper = new Swiper(".partnersSwiper", {
             spaceBetween: 50,
         },
     },
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+    const target = +counter.getAttribute("data-target");
+
+    gsap.to(counter, {
+        innerHTML: target,
+        duration: 2,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: counter,
+            start: "top 90%",
+            once: true,
+        },
+        onUpdate: function () {
+            counter.innerHTML = Math.ceil(this.targets()[0].innerHTML).toLocaleString();
+        },
+    });
 });

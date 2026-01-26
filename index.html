@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Mis Gustos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid" style="padding: 0 50px;">
+            <a class="navbar-brand" href="index.html">ecujcuj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Mis Gustos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/biografia.html">Biografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/kinal.html">Kinal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="seccion-portada">
+        <div class="fondo-portada"></div>
+        <div class="contenido-portada" id="heroContent">
+            <h1 class="titulo-portada">Mis Gustos</h1>
+            <p class="subtitulo-portada">Los VideoJuegos</p>
+        </div>
+        <div class="indicador-desplazamiento" onclick="document.querySelector('.seccion-horizontal').scrollIntoView({behavior: 'smooth'})">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="seccion-horizontal" id="generos">
+        <div class="contenedor-fijo">
+            <div class="scroll-horizontal" id="horizontalScroll">
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="img/rpg.png" alt="RPG">
+                        <h2 class="titulo-panel">RPG ÉPICOS</h2>
+                        <p class="descripcion-panel">Mundos inmersivos donde cada decisión cuenta. Me apasiona crear personajes únicos y vivir historias épicas que permanecen en la memoria.</p>
+                    </div>
+                </div>
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="img/accion.png" alt="Acción">
+                        <h2 class="titulo-panel">ACCIÓN INTENSA</h2>
+                        <p class="descripcion-panel">Combates fluidos, jefes legendarios y mecánicas perfectas. La adrenalina de superar desafíos imposibles es incomparable.</p>
+                    </div>
+                </div>
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="img/competitivo.png" alt="Competitivo">
+                        <h2 class="titulo-panel">COMPETITIVO</h2>
+                        <p class="descripcion-panel">Donde la estrategia y la habilidad se encuentran. Cada partida es una oportunidad para evolucionar y demostrar mi nivel.</p>
+                    </div>
+                </div>
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="img/mundo.png" alt="Mundo Abierto">
+                        <h2 class="titulo-panel">MUNDO ABIERTO</h2>
+                        <p class="descripcion-panel">Libertad absoluta para explorar, descubrir y crear mi propia aventura. Cada rincón esconde una historia por contar.</p>
+                    </div>
+                </div>
+                <div class="panel-juego">
+                    <div class="contenido-panel">
+                        <img src="img/terror.png" alt="Terror">
+                        <h2 class="titulo-panel">TERROR</h2>
+                        <p class="descripcion-panel">Atmósferas oscuras y tensión constante. El horror psicológico que desafía tus nervios y te mantiene al borde del asiento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-datos" id="estadisticas">
+        <div class="fondo-datos"></div>
+        <div class="contenedor-datos">
+            <h2 class="titulo-datos">Tiempo que dedico</h2>
+            <div class="cuadricula-datos">
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">500+</div>
+                    <div class="etiqueta-dato">Horas Jugadas</div>
+                </div>
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">25</div>
+                    <div class="etiqueta-dato">Juegos Completados</div>
+                </div>
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">10</div>
+                    <div class="etiqueta-dato">Logros Platino</div>
+                </div>
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">PC</div>
+                    <div class="etiqueta-dato">Donde Juego</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">GAME ON</h3>
+            <p class="footer-text">Me Gustan los videojuegos ya que no son solo entretenimiento,<br>son una forma de arte interactiva que nos conecta,<br>nos desafía y nos transforma.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

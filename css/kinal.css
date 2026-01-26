@@ -385,3 +385,18 @@ p {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+.galeria-boton-link:hover {
+    background-color: #ffffff;
+    color: #1C3369;
+    transform: scale(1.05);
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .galeria-boton-link {
+        padding: 15px 30px;
+        border-width: 2px;
+        letter-spacing: 2px;
+    }
+}

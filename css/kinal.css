@@ -633,3 +633,87 @@ p {
 .link-leer:hover {
     color: #1C3369;
 }
+
+/* --- Footer Kinal --- */
+
+.footer-kinal {
+    background-color: #1C3369;
+    color: #ffffff;
+}
+
+.titulo-footer {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    color: var(--kinal-azul-claro);
+}
+
+.link-footer {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.link-footer:hover {
+    color: var(--kinal-naranja);
+    padding-left: 5px;
+}
+
+/* Caja de WhatsApp */
+.ws-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+
+.ws-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .footer-kinal {
+        text-align: center;
+    }
+}
+
+/* Estilos de Redes Sociales */
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-icon i {
+    font-size: 1.2rem;
+}
+
+.social-icon:hover {
+    background: #FF9230; /* El naranja de Kinal */
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 146, 48, 0.4);
+    border-color: #FF9230;
+}
+
+/* Ajuste para el botón de admisiones */
+.btn-warning {
+    background-color: #FF9230 !important;
+    border: none;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22 !important;
+    transform: scale(1.05);
+}

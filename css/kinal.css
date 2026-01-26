@@ -88,11 +88,156 @@ body {
     z-index: -1;
 }
 
-
 h1 {
     color: #1C3369;
 }
 
 p {
     color: #2f4883;
+}
+
+/* Colores Institucionales para los Títulos */
+.text-guinda {
+    color: #852b54;
+}
+
+.text-azul {
+    color: #003366;
+}
+
+.text-naranja {
+    color: #f1a139;
+}
+
+.text-oscuro {
+    color: #001d3d;
+}
+
+.seccion-horizontal {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/colegio.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.contenedor-fijo {
+    background: transparent;
+}
+
+.scroll-horizontal {
+    display: flex;
+    height: 100vh;
+    width: 500vw;
+}
+
+.panel-juego {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenido-panel {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.contenido-panel img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.contenido-panel .btn {
+    background: linear-gradient(135deg, #1C3369 0%, #0f1f42 100%);
+
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.4);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contenido-panel .btn:hover {
+    background: linear-gradient(135deg, #FF9230 0%, #ff7a00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 27, 27, 0.5);
+    color: #ffffff;
+}
+
+.contenido-panel .btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(255, 146, 48, 0.3);
+}
+
+.titulo-panel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    font-weight: 900;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.descripcion-panel {
+    color: #f0f0f0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+}
+
+.contenido-panel:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido-panel {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+
+    .contenido-panel img {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .titulo-panel {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-panel {
+        font-size: 0.9rem;
+    }
 }
